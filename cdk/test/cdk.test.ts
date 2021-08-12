@@ -7,7 +7,5 @@ test('Empty Stack', () => {
     // WHEN
     const stack = new Cdk.MyAppStack(app, 'MyTestStack');
     // THEN
-    expectCDK(stack).to(matchTemplate({
-      "Resources": {}
-    }, MatchStyle.EXACT))
+    expectCDK(stack);
 });
