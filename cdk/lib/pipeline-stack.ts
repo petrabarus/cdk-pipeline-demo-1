@@ -32,6 +32,7 @@ export class PipelineStack extends cdk.Stack {
             oauthToken: cdk.SecretValue.secretsManager('GitHubAccess'),
             owner: 'petrabarus',
             repo: 'cdk-pipeline-demo-1',
+            branch: 'main', 
         });
         
         
