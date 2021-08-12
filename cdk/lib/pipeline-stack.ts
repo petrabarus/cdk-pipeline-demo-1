@@ -38,8 +38,8 @@ export class PipelineStack extends cdk.Stack {
         const synthAction = pipelines.SimpleSynthAction.standardNpmSynth({
             sourceArtifact,
             cloudAssemblyArtifact,
-            
-            buildCommand: 'cd cdk && npm run build && npm test',
+            subdirectory: 'cdk',
+            buildCommand: 'npm run build && npm test',
         });
         
         
